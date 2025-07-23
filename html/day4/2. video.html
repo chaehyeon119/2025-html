@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko-KR>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video와 audio</title>
+  </head>
+  <body>
+    <!-- 현재 브라우저에서 허용되는 방식 : autoplay + muted -->
+     <!-- 선택적인 영상 재생일 경우(광고 등)일 때는 preload > none 속성을 사용 -->
+    <video src="./src/rabbit.mp4" width="300" controls poster="../day2/kiki.png"
+    preload="auto"></video>
+    <!-- 1. mp4 가장 먼저 배치 -> 그 다음 형식 -->
+<video controls width="300">
+    <source src="../day4/src/rabbit.mp4" type="video/mp4">
+    <source src="../day4/src/rabbit.MOV" type="video/quicktime" media="(max-width: 1023px)"
+    >
+    비디오를 재생할 수 없습니다.
+</video>
+  </body>
+</html>
